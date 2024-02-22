@@ -1,0 +1,109 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "send_email",
+            "description": "Send an email",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "recipient_email": {
+                        "type": "string",
+                        "description": "Email address of the recipient."
+                    },
+                    "subject": {
+                        "type": "string",
+                        "description": "Subject of the email."
+                    },
+                    "body": {
+                        "type": "string",
+                        "description": "Body content of the email."
+                    }
+                },
+                "required": [
+                    "recipient_email",
+                    "subject",
+                    "body"
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "schedule_meeting",
+            "description": "Schedule a meeting via email",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "meeting_title": {
+                        "type": "string",
+                        "description": "Title of the meeting."
+                    },
+                    "meeting_start": {
+                        "type": "string",
+                        "description": "Date and time of the start of the meeting of the meeting."
+                    },
+                    "meeting_end": {
+                        "type": "string",
+                        "description": "Date and time of the end of the meeting of the meeting."
+                    },
+                    "attendees": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of email addresses of attendees. Only include the ones specified."
+                    }
+                },
+                "required": [
+                    "meeting_title",
+                    "meeting_start",
+                    "meeting_end",
+                    "attendees"
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "add_calendar",
+            "description": "Add an event to the calendar",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "event_title": {
+                        "type": "string",
+                        "description": "Title of the event."
+                    },
+                    "event_start": {
+                        "type": "string",
+                        "description": "Date and time of the start of the event."
+                    },
+                    "event_end": {
+                        "type": "string",
+                        "description": "Date and time of the end of the event."
+                    },
+                    "location": {
+                        "type": "string",
+                        "description": "Location of the event."
+                    },
+                    "attendees": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of email addresses of attendees."
+                    }
+                },
+                "required": [
+                    "event_title",
+                    "event_start",
+                    "event_end",
+                    "location"
+                ]
+            }
+        }
+    }
+]
