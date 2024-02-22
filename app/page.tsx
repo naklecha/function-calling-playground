@@ -53,7 +53,7 @@ export default function Home() {
 
   const sendPostRequest = async () => {
     try {
-      const response = await fetch('/hook', {
+      const response = await fetch('/webhook', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
