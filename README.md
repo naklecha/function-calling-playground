@@ -19,8 +19,6 @@ npm run dev
 
 
 #### Additional Setup (optional)
-
-4. We use function calling to call your Zapier webhook
 1. Zapier a powerful tool for automating tasks and integrating different systems.
 2. In this setup, we will configure a Zapier webhook to automate actions in response to certain events.
 3. Start by creating a Zapier account if you don't have one already.
