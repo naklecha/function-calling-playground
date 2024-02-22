@@ -74,11 +74,13 @@ export default function Home() {
   return (
     <main >
       <div className="max-w-5xl text-sm p-4 m-auto">
-        <p className="text-xl text-white">Function Calling Playground</p>
-        <p className="text-sm text-gray-400">Welcome to my function calling playground! Here, you can experiment with function calls and execute actions on Zapier.</p>
+        <p className="text-xs text-blue-300"><a className="underline" target="_blank" href="https://github.com/naklecha/function-calling-playground">Fork this project on Github</a></p>
+        <p className="text-lg text-gray-300 mt-1">Function Calling Playground</p>
+        <p className="text-sm text-gray-400">Welcome to my function calling playground! Here, you can experiment with function calls and execute actions on Zapier / your custom webhook.</p>
+
 
         <div className="mt-5">
-          <p className="text-lg text-orange-500">Config</p>
+          <p className="text-orange-500">Config</p>
 
           <div className="flex gap-3 mt-1 text-xs">
             <textarea className="bg-orange-100 bg-opacity-10 text-gray-300 p-3 rounded-xl flex-grow border-2 border-orange-600/10" rows={10} onChange={changeFunction} value={functions} />
@@ -86,7 +88,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10">
-          <p className="text-lg text-orange-500">Execute Query</p>
+          <p className="text-orange-500">Execute Query</p>
 
           <div className="flex gap-3 mt-1">
             <input className="bg-orange-100 bg-opacity-10 text-white p-3 rounded-xl flex-grow border-2 border-orange-600/10" placeholder="Enter the query that you want to execute" onChange={changeValue} value={query} />
@@ -135,18 +137,21 @@ export default function Home() {
         </div>
 
         <div className="w-full mt-10 text-sm text-white">
-          <p className="text-orange-500 text-lg">Additional Setup (optional)</p>
+          <p className="text-orange-500">Additional Setup (optional)</p>
           <input className="mt-2 bg-orange-100 bg-opacity-10 text-white p-3 rounded-xl border-2 border-orange-600/10 w-full" placeholder="https://hooks.zapier.com/hooks/catch/XXXXXXXX/XXXXXX" onChange={changeZapierWebhook} />
           <div className="text-sm text-gray-400 mt-4">
+            {/* <p><a className="underline text-blue-100 cursor-pointer" href="https://zapier.com/" target="_blank">Watch this setup tutorial</a></p>
+            <p className="my-3 text-xs">or follow the following steps</p> */}
+
             <p>1. Zapier a powerful tool for automating tasks and integrating different systems.</p>
             <p>2. In this setup, we will configure a Zapier webhook to automate actions in response to certain events.</p>
-            <p>3. Start by <a className="underline text-blue-100 cursor-pointer" href="https://zapier.com/" target="_blank">creating a Zapier account</a> if you don't have one already.</p>
+            <p>3. Start by <a className="underline text-blue-300" href="https://zapier.com/" target="_blank">creating a Zapier account</a> if you don't have one already.</p>
             <p>4. Set up a new Zap in Zapier.</p>
             <p>5. Add a new action step and search for "Webhooks by Zapier".</p>
             <p>6. Select "Webhooks by Zapier" as the action app and choose the desired action to perform.</p>
             <p>7. Configure the action step settings, including any required parameters or data.</p>
             <p>8. In the webhook URL field on the website, enter the URL provided by Zapier for your webhook.</p>
-            <p>9. At the end your Zap should look something like this: <a target="_blank" href="/zapier.png" className="underline text-blue-100 cursor-pointer">example Zapier workflow</a></p>
+            <p>9. At the end your Zap should look something like this: <a target="_blank" href="/zapier.png" className="underline text-blue-300">example Zapier workflow</a></p>
           </div>
         </div>
       </div>
