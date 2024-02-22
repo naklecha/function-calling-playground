@@ -1,11 +1,17 @@
 ## Fireworks Function Calling
 
-![demo](https://github.com/naklecha/function-calling-example/blob/main/public/demo.png?raw=true)
+An online playground for function calling and sending function calling arguments to a webhook!
+
+Try the project here: [fc.naklecha.com](https://fc.naklecha.com)
+
+![demo](https://github.com/naklecha/function-calling-playground/blob/main/public/demo.png?raw=true)
 
 ### Setup
 ```bash
 npm install
 ```
+
+Generate an API key on fireworks: [fireworks.ai/api-keys](https://fireworks.ai/api-keys)
 
 Place your fireworks API key in the `.env` file.
 ```bash
