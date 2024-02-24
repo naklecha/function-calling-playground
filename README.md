@@ -1,6 +1,6 @@
 ## Fireworks Function Calling
 
-An online playground for function calling and sending function calling arguments to a webhook!
+I built an online playground for function calling and sending function calling arguments to a webhook! Also, I'd like to shout out Fireworks.ai for sponsoring API credits, so I can keep this website free to use :)
 
 Try the project here: [fc.naklecha.com](https://fc.naklecha.com)
 

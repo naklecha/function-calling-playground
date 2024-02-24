@@ -154,6 +154,8 @@ export default function Home() {
             <p>9. At the end your Zap should look something like this: <a target="_blank" href="/zapier.png" className="underline text-blue-300">example Zapier workflow</a></p>
           </div>
         </div>
+
+        <p className="mt-20 mb-10 text-gray-300 text-xs text-center">Powered By <a className="underline" href="https://fireworks.ai/">Fireworks.ai</a></p>
       </div>
     </main>
   );
